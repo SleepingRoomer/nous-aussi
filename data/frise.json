@@ -1,0 +1,7 @@
+[
+  {"annee": 1817, "maladie": "parkinson", "titre": "James Parkinson décrit la « paralysie agitante »", "texte": "Ce médecin londonien publie l'observation de six patients. La maladie portera son nom."},
+  {"annee": 1854, "maladie": "trouble-bipolaire", "titre": "Jean-Pierre Falret décrit la « folie circulaire »", "texte": "Il décrit l'alternance de phases d'excitation et de mélancolie. Jules Baillarger publie la même année une description proche."},
+  {"annee": 1868, "maladie": "sclerose-en-plaques", "titre": "Jean-Martin Charcot décrit la sclérose en plaques", "texte": "À la Salpêtrière, il relie les symptômes aux lésions qu'il observe dans le système nerveux."},
+  {"annee": 1932, "maladie": "crohn", "titre": "Burrill Crohn et ses collègues décrivent l'iléite régionale", "texte": "L'article publié à New York donne son nom à la maladie de Crohn."},
+  {"annee": 1943, "maladie": "autisme", "titre": "Leo Kanner décrit l'autisme", "texte": "Ce psychiatre américain publie l'observation de onze enfants. Hans Asperger publie à Vienne l'année suivante."}
+]

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Nous aussi{% endblock %}
+{% block main %}
+<section class="wrap hero">
+  <div class="hero-text">
+    <div class="eyebrow">personnalités · maladies · témoignages</div>
+    <h1>Des personnalités qui ont parlé publiquement de leur maladie</h1>
+    <p class="lede">Acteurs, sportives, écrivains ou chercheuses. Pour chacun, son parcours, ce qu'il en a dit, et des contacts utiles si vous êtes concerné.</p>
+    <form class="search" role="search" id="search" autocomplete="off">
+      <label class="sr-only" for="q">Chercher une personne ou une maladie</label>
+      <input id="q" type="search" placeholder="Une personne, une maladie…" aria-controls="suggest" aria-autocomplete="list">
+      <button class="btn" type="submit">Chercher</button>
+      <ul class="suggest" id="suggest" role="listbox" hidden></ul>
+    </form>
+  </div>
+  <div class="mosaic" aria-hidden="true">
+    {% for p in mosaique %}
+      {% if loop.index0 == 2 %}<div class="count"><span class="eyebrow" style="color:#A9AFB8">fiches</span><b>{{ nb_personnes }}</b></div>{% endif %}
+      <span class="mono m-{{ p.principale }}">{{ p.initiales }}</span>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="maladies" class="soft">
+  <div class="wrap section">
+    <div class="section-head">
+      <div>
+        <h2>Parcourir par maladie</h2>
+        <p>Chaque maladie porte la couleur de son ruban de sensibilisation.</p>
+      </div>
+    </div>
+    <div class="cards">
+      {% for m in maladies %}
+      <a class="card m-{{ m.slug }}" href="maladies/{{ m.slug }}.html">
+        <span class="card-top"><span class="dot{% if m.rayures %} stripes{% endif %}"></span><span class="card-n">{{ m.nb }} fiche{{ 's' if m.nb > 1 }}</span></span>
+        <span style="display:flex;flex-direction:column;gap:4px"><span class="card-name">{{ m.nom }}</span><span class="card-sub">Symbole : {{ m.symbole | lower_first }}</span></span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head">
+    <div>
+      <h2>Quelques fiches</h2>
+      <p>Une personnalité par maladie, pour commencer.</p>
+    </div>
+  </div>
+  <div class="portraits">
+    {% for p in une %}
+    <a class="portrait m-{{ p.principale }}" href="personnes/{{ p.slug }}.html">
+      <span class="mono" aria-hidden="true">{{ p.initiales }}</span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b>{{ p.nom }}</b><small>{{ p.role_court }} · {{ maladies_par_slug[p.principale].court }}</small></span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:40px">
+    <div class="section-head">
+      <div style="max-width:640px">
+        <div class="eyebrow">frise historique</div>
+        <h2>Quand chaque maladie a été décrite, et qui l'a vécue</h2>
+      </div>
+      <a class="btn light" href="frise.html">Voir la frise →</a>
+    </div>
+    <ol class="milestones">
+      {% for e in reperes %}
+      <li class="m-{{ e.maladie }}"><b>{{ e.annee }}</b><span>{{ e.court }}</span></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section id="patients" class="wrap section">
+  <div class="split">
+    <div>
+      <h2>Vous vivez avec l'une de ces maladies ?</h2>
+      <p style="color:var(--ink-2)">Les associations de patients informent, orientent et rompent l'isolement. Chaque page maladie liste les plus utiles. Pour toute question sur votre santé, parlez-en à votre médecin.</p>
+    </div>
+    <ul class="res-list">
+      {% for r in ressources %}
+      <li>{% if r.url %}<a href="{{ r.url }}" rel="noopener">{{ r.nom }}</a>{% else %}<strong>{{ r.nom }}</strong>{% endif %}<span>{{ r.pour }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script type="application/json" id="index-recherche">{{ index_recherche | tojson }}</script>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% macro logo(root) -%}
+<a class="logo" href="{{ root }}index.html">
+  <span class="logo-mark" aria-hidden="true"><span class="m-parkinson"></span><span class="m-sclerose-en-plaques"></span><span class="m-crohn"></span><span class="m-depression"></span><span class="m-autisme"></span><span class="m-trouble-bipolaire"></span></span>
+  Nous aussi
+</a>
+{%- endmacro %}
+
+{% macro badge(statut) -%}
+<span class="badge b-{{ statut }}">{{ {'declaree': 'déclarée', 'biographie': 'biographie', 'hypothese': 'hypothèse'}[statut] }}</span>
+{%- endmacro %}
+
+{# Carte de la page maladie : porte les attributs lus par les filtres #}
+{% macro pcard(p, lien, root) -%}
+<a class="pcard m-{{ lien.maladie }}" href="{{ root }}personnes/{{ p.slug }}.html"
+   data-vie="{{ 'alive' if p.vivant else 'dead' }}" data-fr="{{ 1 if p.francophone else 0 }}"
+   data-dom="{{ p.domaine }}" data-src="{{ lien.statut }}">
+  <span class="mono" aria-hidden="true">{{ p.initiales }}{% if p.francophone %}<span class="fr-tag">fr</span>{% endif %}</span>
+  <span class="pcard-id"><b>{{ p.nom }}</b><span>{{ p.role }} · {{ p.annees }}</span></span>
+  <span class="pcard-foot">{{ badge(lien.statut) }}{% if lien.get('annonce') %}<span>Annonce en {{ lien.annonce }}</span>{% endif %}</span>
+</a>
+{%- endmacro %}
+
+{% macro mini(p, root) -%}
+<a class="mini m-{{ p.principale }}" href="{{ root }}personnes/{{ p.slug }}.html">
+  <span class="mono" aria-hidden="true">{{ p.initiales }}</span>
+  <span><b>{{ p.nom }}</b><small>{{ p.role }}</small></span>
+</a>
+{%- endmacro %}

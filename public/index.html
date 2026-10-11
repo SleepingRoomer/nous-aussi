@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nous aussi</title>
+<meta name="description" content="Des personnalités qui ont parlé publiquement de leur maladie : parcours, sources et contacts utiles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&amp;family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=Alegreya+Sans+SC:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/maladies.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap site-nav">
+    <a class="logo" href="index.html">
+  <span class="logo-mark" aria-hidden="true"><span class="m-parkinson"></span><span class="m-sclerose-en-plaques"></span><span class="m-crohn"></span><span class="m-depression"></span><span class="m-autisme"></span><span class="m-trouble-bipolaire"></span></span>
+  Nous aussi
+</a>
+    <nav class="navlinks" aria-label="Navigation principale">
+      <a href="index.html#maladies">Maladies</a>
+      <a href="frise.html">Frise historique</a>
+      <a href="index.html#patients">Pour les patients</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Navigation mobile">
+        <a href="index.html#maladies">Maladies</a>
+        <a href="frise.html">Frise historique</a>
+        <a href="index.html#patients">Pour les patients</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div class="hero-text">
+    <div class="eyebrow">personnalités · maladies · témoignages</div>
+    <h1>Des personnalités qui ont parlé publiquement de leur maladie</h1>
+    <p class="lede">Acteurs, sportives, écrivains ou chercheuses. Pour chacun, son parcours, ce qu'il en a dit, et des contacts utiles si vous êtes concerné.</p>
+    <form class="search" role="search" id="search" autocomplete="off">
+      <label class="sr-only" for="q">Chercher une personne ou une maladie</label>
+      <input id="q" type="search" placeholder="Une personne, une maladie…" aria-controls="suggest" aria-autocomplete="list">
+      <button class="btn" type="submit">Chercher</button>
+      <ul class="suggest" id="suggest" role="listbox" hidden></ul>
+    </form>
+  </div>
+  <div class="mosaic" aria-hidden="true">
+      <span class="mono m-parkinson">AA</span>
+      <span class="mono m-autisme">BR</span>
+<div class="count"><span class="eyebrow" style="color:#A9AFB8">fiches</span><b>30</b></div>      <span class="mono m-trouble-bipolaire">SG</span>
+      <span class="mono m-sclerose-en-plaques">CA</span>
+      <span class="mono m-depression">LH</span>
+      <span class="mono m-crohn">A</span>
+      <span class="mono m-parkinson">MF</span>
+      <span class="mono m-parkinson">MD</span>
+  </div>
+</section>
+
+<section id="maladies" class="soft">
+  <div class="wrap section">
+    <div class="section-head">
+      <div>
+        <h2>Parcourir par maladie</h2>
+        <p>Chaque maladie porte la couleur de son ruban de sensibilisation.</p>
+      </div>
+    </div>
+    <div class="cards">
+      <a class="card m-parkinson" href="maladies/parkinson.html">
+        <span class="card-top"><span class="dot"></span><span class="card-n">10 fiches</span></span>
+        <span style="display:flex;flex-direction:column;gap:4px"><span class="card-name">Maladie de Parkinson</span><span class="card-sub">Symbole : la tulipe rouge</span></span>
+      </a>
+      <a class="card m-autisme" href="maladies/autisme.html">
+        <span class="card-top"><span class="dot"></span><span class="card-n">4 fiches</span></span>
+        <span style="display:flex;flex-direction:column;gap:4px"><span class="card-name">Autisme</span><span class="card-sub">Symbole : le signe infini</span></span>
+      </a>
+      <a class="card m-trouble-bipolaire" href="maladies/trouble-bipolaire.html">
+        <span class="card-top"><span class="dot stripes"></span><span class="card-n">3 fiches</span></span>
+        <span style="display:flex;flex-direction:column;gap:4px"><span class="card-name">Trouble bipolaire</span><span class="card-sub">Symbole : le ruban rayé noir et blanc</span></span>
+      </a>
+      <a class="card m-sclerose-en-plaques" href="maladies/sclerose-en-plaques.html">
+        <span class="card-top"><span class="dot"></span><span class="card-n">4 fiches</span></span>
+        <span style="display:flex;flex-direction:column;gap:4px"><span class="card-name">Sclérose en plaques</span><span class="card-sub">Symbole : le ruban orange</span></span>
+      </a>
+      <a class="card m-depression" href="maladies/depression.html">
+        <span class="card-top"><span class="dot"></span><span class="card-n">4 fiches</span></span>
+        <span style="display:flex;flex-direction:column;gap:4px"><span class="card-name">Dépression</span><span class="card-sub">Symbole : le ruban vert</span></span>
+      </a>
+      <a class="card m-crohn" href="maladies/crohn.html">
+        <span class="card-top"><span class="dot"></span><span class="card-n">5 fiches</span></span>
+        <span style="display:flex;flex-direction:column;gap:4px"><span class="card-name">Maladie de Crohn</span><span class="card-sub">Symbole : le ruban violet</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head">
+    <div>
+      <h2>Quelques fiches</h2>
+      <p>Une personnalité par maladie, pour commencer.</p>
+    </div>
+  </div>
+  <div class="portraits">
+    <a class="portrait m-parkinson" href="personnes/alan-alda.html">
+      <span class="mono" aria-hidden="true">AA</span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b>Alan Alda</b><small>Acteur · Parkinson</small></span>
+    </a>
+    <a class="portrait m-autisme" href="personnes/bella-ramsey.html">
+      <span class="mono" aria-hidden="true">BR</span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b>Bella Ramsey</b><small>Actrice · Autisme</small></span>
+    </a>
+    <a class="portrait m-trouble-bipolaire" href="personnes/selena-gomez.html">
+      <span class="mono" aria-hidden="true">SG</span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b>Selena Gomez</b><small>Chanteuse · Bipolarité</small></span>
+    </a>
+    <a class="portrait m-sclerose-en-plaques" href="personnes/christina-applegate.html">
+      <span class="mono" aria-hidden="true">CA</span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b>Christina Applegate</b><small>Actrice · SEP</small></span>
+    </a>
+    <a class="portrait m-depression" href="personnes/lewis-hamilton.html">
+      <span class="mono" aria-hidden="true">LH</span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b>Lewis Hamilton</b><small>Pilote de Formule 1 · Dépression</small></span>
+    </a>
+    <a class="portrait m-crohn" href="personnes/anastacia.html">
+      <span class="mono" aria-hidden="true">A</span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b>Anastacia</b><small>Chanteuse · Crohn</small></span>
+    </a>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:40px">
+    <div class="section-head">
+      <div style="max-width:640px">
+        <div class="eyebrow">frise historique</div>
+        <h2>Quand chaque maladie a été décrite, et qui l'a vécue</h2>
+      </div>
+      <a class="btn light" href="frise.html">Voir la frise →</a>
+    </div>
+    <ol class="milestones">
+      <li class="m-parkinson"><b>1817</b><span>James Parkinson décrit la « paralysie agitante »</span></li>
+      <li class="m-trouble-bipolaire"><b>1854</b><span>Jean-Pierre Falret décrit la « folie circulaire »</span></li>
+      <li class="m-sclerose-en-plaques"><b>1868</b><span>Jean-Martin Charcot décrit la sclérose en plaques</span></li>
+      <li class="m-crohn"><b>1932</b><span>Burrill Crohn et ses collègues décrivent l&#39;iléite régionale</span></li>
+      <li class="m-autisme"><b>1943</b><span>Leo Kanner décrit l&#39;autisme</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="patients" class="wrap section">
+  <div class="split">
+    <div>
+      <h2>Vous vivez avec l'une de ces maladies ?</h2>
+      <p style="color:var(--ink-2)">Les associations de patients informent, orientent et rompent l'isolement. Chaque page maladie liste les plus utiles. Pour toute question sur votre santé, parlez-en à votre médecin.</p>
+    </div>
+    <ul class="res-list">
+      <li><strong>France Parkinson</strong><span>Parkinson</span></li>
+      <li><strong>Centres experts Parkinson</strong><span>Parkinson</span></li>
+      <li><strong>Autisme France</strong><span>Autisme</span></li>
+      <li><strong>Centres ressources autisme (CRA)</strong><span>Autisme</span></li>
+      <li><strong>Argos 2001</strong><span>Bipolarité</span></li>
+      <li><strong>3114</strong><span>Bipolarité</span></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Nous aussi ne donne aucun avis médical. Les fiches s'appuient sur des déclarations publiques et des sources biographiques, citées sur chaque page.</p>
+    <nav aria-label="Liens de bas de page">
+      <a href="a-propos.html#signaler">Signaler une erreur</a>
+      <a href="a-propos.html#retrait">Demander un retrait</a>
+      <a href="a-propos.html#methode">Méthode</a>
+    </nav>
+  </div>
+</footer>
+<script src="static/app.js" defer></script>
+<script type="application/json" id="index-recherche">[{"k": "Parkinson", "s": "10 fiches", "t": "Maladie de Parkinson", "u": "maladies/parkinson.html"}, {"k": "Autisme", "s": "4 fiches", "t": "Autisme", "u": "maladies/autisme.html"}, {"k": "Bipolarit\u00e9", "s": "3 fiches", "t": "Trouble bipolaire", "u": "maladies/trouble-bipolaire.html"}, {"k": "SEP", "s": "4 fiches", "t": "Scl\u00e9rose en plaques", "u": "maladies/sclerose-en-plaques.html"}, {"k": "D\u00e9pression", "s": "4 fiches", "t": "D\u00e9pression", "u": "maladies/depression.html"}, {"k": "Crohn", "s": "5 fiches", "t": "Maladie de Crohn", "u": "maladies/crohn.html"}, {"k": "Acteur, auteur", "s": "Parkinson", "t": "Michael J. Fox", "u": "personnes/michael-j-fox.html"}, {"k": "Rugbyman", "s": "Parkinson", "t": "Marc Dal Maso", "u": "personnes/marc-dal-maso.html"}, {"k": "Humoriste, acteur", "s": "Parkinson", "t": "Billy Connolly", "u": "personnes/billy-connolly.html"}, {"k": "Auteur-compositeur", "s": "Parkinson", "t": "Neil Diamond", "u": "personnes/neil-diamond.html"}, {"k": "Acteur", "s": "Parkinson", "t": "Alan Alda", "u": "personnes/alan-alda.html"}, {"k": "Chanteur", "s": "Parkinson", "t": "Ozzy Osbourne", "u": "personnes/ozzy-osbourne.html"}, {"k": "Cofondateur d\u0027Intel", "s": "Parkinson", "t": "Andrew Grove", "u": "personnes/andrew-grove.html"}, {"k": "Psychiatre", "s": "Parkinson", "t": "Ad\u00e9la\u00efde Hautval", "u": "personnes/adelaide-hautval.html"}, {"k": "Ing\u00e9nieur, cr\u00e9ateur de la Mini", "s": "Parkinson", "t": "Alec Issigonis", "u": "personnes/alec-issigonis.html"}, {"k": "Actrice", "s": "Parkinson", "t": "Anna Neagle", "u": "personnes/anna-neagle.html"}, {"k": "Actrice", "s": "Autisme", "t": "Chlo\u00e9 Hayden", "u": "personnes/chloe-hayden.html"}, {"k": "Actrice", "s": "Autisme", "t": "Bella Ramsey", "u": "personnes/bella-ramsey.html"}, {"k": "Philosophe, \u00e9crivain", "s": "Autisme", "t": "Josef Schovanec", "u": "personnes/josef-schovanec.html"}, {"k": "Autrice, animatrice", "s": "Autisme", "t": "Carly Fleischmann", "u": "personnes/carly-fleischmann.html"}, {"k": "\u00c9crivain, acteur", "s": "Bipolarit\u00e9", "t": "Stephen Fry", "u": "personnes/stephen-fry.html"}, {"k": "Chanteuse, actrice", "s": "Bipolarit\u00e9", "t": "Selena Gomez", "u": "personnes/selena-gomez.html"}, {"k": "Actrice, \u00e9crivaine", "s": "Bipolarit\u00e9", "t": "Carrie Fisher", "u": "personnes/carrie-fisher.html"}, {"k": "Actrice", "s": "SEP", "t": "Selma Blair", "u": "personnes/selma-blair.html"}, {"k": "Actrice", "s": "SEP", "t": "Christina Applegate", "u": "personnes/christina-applegate.html"}, {"k": "Pionnier de l\u0027aviation", "s": "SEP", "t": "Alberto Santos-Dumont", "u": "personnes/alberto-santos-dumont.html"}, {"k": "\u00c9crivain et critique", "s": "SEP", "t": "Iouri Tynianov", "u": "personnes/iouri-tynianov.html"}, {"k": "Pilote de Formule 1", "s": "D\u00e9pression", "t": "Lewis Hamilton", "u": "personnes/lewis-hamilton.html"}, {"k": "Auteur-compositeur", "s": "D\u00e9pression", "t": "Stromae", "u": "personnes/stromae.html"}, {"k": "Math\u00e9maticien", "s": "D\u00e9pression", "t": "Georg Cantor", "u": "personnes/georg-cantor.html"}, {"k": "Po\u00e8te et romancier", "s": "D\u00e9pression", "t": "Conrad Ferdinand Meyer", "u": "personnes/conrad-ferdinand-meyer.html"}, {"k": "Chanteuse", "s": "Crohn", "t": "Anastacia", "u": "personnes/anastacia.html"}, {"k": "Humoriste, acteur", "s": "Crohn", "t": "Pete Davidson", "u": "personnes/pete-davidson.html"}, {"k": "Pr\u00e9sident des \u00c9tats-Unis", "s": "Crohn", "t": "Dwight D. Eisenhower", "u": "personnes/dwight-eisenhower.html"}, {"k": "Compositeur", "s": "Crohn", "t": "Ludwig van Beethoven", "u": "personnes/ludwig-van-beethoven.html"}, {"k": "Roi des Anglo-Saxons", "s": "Crohn", "t": "Alfred le Grand", "u": "personnes/alfred-le-grand.html"}]</script>
+</body>
+</html>

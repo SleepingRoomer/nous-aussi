@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pcard %}
+{% block title %}{{ m.nom }} — Nous aussi{% endblock %}
+{% block description %}{{ m.nb }} personnalités qui vivent ou ont vécu avec la {{ m.nom | lower_first }}.{% endblock %}
+{% block main %}
+<section class="mhero m-{{ m.slug }}">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="{{ root }}index.html">Accueil</a><span aria-hidden="true">/</span><a href="{{ root }}index.html#maladies">Maladies</a><span aria-hidden="true">/</span><span>{{ m.court }}</span></nav>
+    <div class="mhero-grid">
+      <div>
+        <div class="eyebrow">{{ m.categorie }}</div>
+        <h1>{{ m.nom }}</h1>
+        <p class="lede">{{ m.description }}</p>
+      </div>
+      <div class="emblem" aria-hidden="true"><span class="big-dot{% if m.rayures %} stripes{% endif %}"{% if m.rayures %} style="border:4px solid var(--c)"{% endif %}></span></div>
+    </div>
+    <dl class="facts">
+      <div><dt>première description</dt><dd>{{ m.premiere_description }}</dd></div>
+      <div><dt>journée mondiale</dt><dd>{{ m.journee }}</dd></div>
+      <div><dt>symbole</dt><dd>{{ m.symbole }}</dd></div>
+      <div><dt>en France</dt><dd>{{ m.en_france }}</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="wrap section m-{{ m.slug }}" id="personnalites" style="padding-block:56px 64px;gap:28px">
+  <div class="list-head">
+    <h2>Personnalités</h2>
+    <span id="compte" aria-live="polite">{{ m.nb }} personnalité{{ 's' if m.nb > 1 }}</span>
+  </div>
+  <div class="browse" data-total="{{ m.nb }}">
+    <aside class="side" aria-label="Filtres">
+      <div class="toggle">
+        <label for="fr"><b>Francophones</b><span>Personnalités de langue française</span></label>
+        <span class="sw"><input id="fr" type="checkbox"><span class="track"></span><span class="knob"></span></span>
+      </div>
+      <fieldset class="facet" data-facet="vie">
+        <legend>période</legend>
+        <button class="opt" type="button" data-value="all" aria-pressed="true"><span>Toutes les époques</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="alive" aria-pressed="false"><span>En vie</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="dead" aria-pressed="false"><span>Disparues</span><span class="n"></span></button>
+      </fieldset>
+      <fieldset class="facet" data-facet="dom">
+        <legend>domaine</legend>
+        <button class="opt" type="button" data-value="all" aria-pressed="true"><span>Tous les domaines</span><span class="n"></span></button>
+        {% for k, label in domaines.items() %}
+        <button class="opt" type="button" data-value="{{ k }}" aria-pressed="false"><span>{{ label }}</span><span class="n"></span></button>
+        {% endfor %}
+      </fieldset>
+      <fieldset class="facet" data-facet="src">
+        <legend>d'où vient l'information</legend>
+        <button class="opt" type="button" data-value="all" aria-pressed="true"><span>Toutes les sources</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="declaree" aria-pressed="false"><span>Déclarée par la personne</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="biographie" aria-pressed="false"><span>Biographie</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="hypothese" aria-pressed="false"><span>Hypothèse historique</span><span class="n"></span></button>
+      </fieldset>
+      <button class="linkish" type="button" id="reset" hidden>Effacer les filtres</button>
+    </aside>
+    <div class="results">
+      <div class="empty" id="vide" hidden><b>Aucune personnalité ne correspond.</b><button class="linkish" type="button" data-reset>Effacer les filtres</button></div>
+      <div class="grid3" id="cartes">
+        {% for p, lien in personnes %}{{ pcard(p, lien, root) }}
+        {% endfor %}
+      </div>
+      <div class="src-legend">
+        <span><b>Déclarée</b> : la personne l'a dit elle-même.</span>
+        <span><b>Biographie</b> : établi par des biographes.</span>
+        <span><b>Hypothèse</b> : diagnostic posé après coup.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap help">
+    <div>
+      <h2>Vous êtes concerné ?</h2>
+      <p style="color:var(--ink-2)">Votre médecin traitant reste votre premier interlocuteur. Les associations accompagnent les patients et leurs proches au quotidien.</p>
+    </div>
+    <ul>
+      {% for r in m.ressources %}
+      <li>{% if r.url %}<a href="{{ r.url }}" rel="noopener">{% else %}<div>{% endif %}<span><b>{{ r.nom }}</b><span>{{ r.detail }}</span></span>{% if r.url %}<span aria-hidden="true">→</span></a>{% else %}</div>{% endif %}</li>
+      {% endfor %}
+      <li><a href="{{ root }}frise.html#{{ m.slug }}"><span><b>{{ m.court }} dans l'histoire</b><span>Sur la frise historique</span></span><span aria-hidden="true">→</span></a></li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

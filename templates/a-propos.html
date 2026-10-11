@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}À propos — Nous aussi{% endblock %}
+{% block main %}
+<div class="wrap" style="padding-block:56px 80px;max-width:820px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <div class="eyebrow">à propos</div>
+    <h1 style="font-size:clamp(40px,5vw,60px)">Comment ce site est fait</h1>
+    <p class="lede">Nous aussi rassemble des personnalités qui vivent ou ont vécu avec une maladie, pour mieux faire connaître ces maladies, raconter leur histoire et orienter les personnes concernées vers des ressources utiles.</p>
+  </div>
+
+  <section id="methode" style="display:flex;flex-direction:column;gap:12px">
+    <h2 style="font-size:30px">Méthode</h2>
+    <p>Chaque lien entre une personne et une maladie indique d'où vient l'information :</p>
+    <ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px">
+      <li><b>Déclarée</b> : la personne l'a dit elle-même, dans une interview, un livre ou une publication.</li>
+      <li><b>Biographie</b> : l'information est établie par des sources biographiques sérieuses.</li>
+      <li><b>Hypothèse</b> : il s'agit d'un diagnostic posé après coup par des historiens ou des médecins.</li>
+    </ul>
+    <p>Pour les personnes vivantes, seules les maladies qu'elles ont elles-mêmes rendues publiques sont publiées.</p>
+  </section>
+
+  <section id="signaler" style="display:flex;flex-direction:column;gap:12px">
+    <h2 style="font-size:30px">Signaler une erreur</h2>
+    <p>Écrivez-nous à <b>[ADRESSE E-MAIL]</b> en indiquant la fiche concernée et, si possible, une source.</p>
+  </section>
+
+  <section id="retrait" style="display:flex;flex-direction:column;gap:12px">
+    <h2 style="font-size:30px">Demander une modification ou un retrait</h2>
+    <p>Si vous êtes la personne concernée ou l'un de ses proches, écrivez à <b>[ADRESSE E-MAIL]</b>. Les demandes sont traitées sous [DÉLAI].</p>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <h2 style="font-size:30px">Avis médical</h2>
+    <p>Ce site ne donne aucun avis médical. Pour toute question sur votre santé, adressez-vous à votre médecin. En cas de pensées suicidaires, appelez le 3114, gratuit et ouvert 24 h/24.</p>
+  </section>
+</div>
+{% endblock %}

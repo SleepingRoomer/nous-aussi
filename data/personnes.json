@@ -1,0 +1,225 @@
+[
+  {
+    "slug": "michael-j-fox", "nom": "Michael J. Fox", "role": "Acteur, auteur",
+    "naissance": 1961, "deces": null, "lieu_naissance": "Edmonton (Canada)",
+    "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "parkinson", "statut": "declaree", "diagnostic": 1991, "annonce": 1998}],
+    "resume": "Acteur, diagnostiqué en 1991. Il en parle publiquement depuis 1998 et soutient la recherche avec sa fondation.",
+    "parcours": [
+      {"annee": 1991, "texte": "Diagnostic, en plein tournage. Il continue à jouer sans en parler."},
+      {"annee": 1998, "texte": "Annonce publique de sa maladie."},
+      {"annee": 2000, "texte": "Création de la Fondation Michael J. Fox pour la recherche sur Parkinson."},
+      {"annee": 2020, "texte": "Se retire des plateaux de tournage."},
+      {"annee": 2023, "texte": "Sortie du documentaire Still, consacré à sa vie avec la maladie."}
+    ],
+    "citation": null, "sources": []
+  },
+  {
+    "slug": "marc-dal-maso", "nom": "Marc Dal Maso", "initiales": "MD", "role": "Rugbyman",
+    "naissance": 1967, "deces": null, "francophone": true, "domaine": "sport",
+    "maladies": [{"maladie": "parkinson", "statut": "declaree", "annonce": null}],
+    "resume": "Ancien talonneur du XV de France. [Texte de la fiche à rédiger]",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "billy-connolly", "nom": "Billy Connolly", "role": "Humoriste, acteur",
+    "naissance": 1942, "deces": null, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "parkinson", "statut": "declaree", "annonce": 2013}],
+    "resume": "Humoriste écossais. Il a annoncé sa maladie en 2013 et s'est retiré de la scène en 2018.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "neil-diamond", "nom": "Neil Diamond", "role": "Auteur-compositeur",
+    "naissance": 1941, "deces": null, "francophone": false, "domaine": "musique",
+    "maladies": [{"maladie": "parkinson", "statut": "declaree", "annonce": 2018}],
+    "resume": "Il a arrêté les tournées en 2018 en annonçant sa maladie.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "alan-alda", "nom": "Alan Alda", "role": "Acteur",
+    "naissance": 1936, "deces": null, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "parkinson", "statut": "declaree", "annonce": 2018}],
+    "resume": "Il a rendu son diagnostic public en 2018 et continue de travailler.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "ozzy-osbourne", "nom": "Ozzy Osbourne", "role": "Chanteur",
+    "naissance": 1948, "deces": 2025, "francophone": false, "domaine": "musique",
+    "maladies": [{"maladie": "parkinson", "statut": "declaree", "annonce": 2020}],
+    "resume": "Il a annoncé sa maladie en 2020.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "andrew-grove", "nom": "Andrew Grove", "role": "Cofondateur d'Intel",
+    "naissance": 1936, "deces": 2016, "francophone": false, "domaine": "sciences",
+    "maladies": [{"maladie": "parkinson", "statut": "declaree", "annonce": 2001}],
+    "resume": "Il a financé la recherche sur la maladie après son diagnostic.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "adelaide-hautval", "nom": "Adélaïde Hautval", "role": "Psychiatre",
+    "naissance": 1906, "deces": 1988, "francophone": true, "domaine": "sciences",
+    "maladies": [{"maladie": "parkinson", "statut": "biographie"}],
+    "resume": "[Texte de la fiche à rédiger]",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "alec-issigonis", "nom": "Alec Issigonis", "role": "Ingénieur, créateur de la Mini",
+    "naissance": 1906, "deces": 1988, "francophone": false, "domaine": "sciences",
+    "maladies": [{"maladie": "parkinson", "statut": "biographie"}],
+    "resume": "[Texte de la fiche à rédiger]",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "anna-neagle", "nom": "Anna Neagle", "role": "Actrice",
+    "naissance": 1904, "deces": 1986, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "parkinson", "statut": "biographie"}],
+    "resume": "[Texte de la fiche à rédiger]",
+    "parcours": [], "citation": null, "sources": []
+  },
+
+  {
+    "slug": "chloe-hayden", "nom": "Chloé Hayden", "role": "Actrice",
+    "naissance": 1997, "deces": null, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "autisme", "statut": "declaree"}],
+    "resume": "Actrice australienne, elle parle de son autisme dans ses vidéos et dans un livre.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "bella-ramsey", "nom": "Bella Ramsey", "role": "Actrice",
+    "naissance": 2003, "deces": null, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "autisme", "statut": "declaree"}],
+    "resume": "[Texte de la fiche à rédiger]",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "josef-schovanec", "nom": "Josef Schovanec", "role": "Philosophe, écrivain",
+    "naissance": 1981, "deces": null, "francophone": true, "domaine": "litterature",
+    "maladies": [{"maladie": "autisme", "statut": "declaree"}],
+    "resume": "Docteur en philosophie, il raconte son autisme dans ses livres et ses chroniques radio.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "carly-fleischmann", "nom": "Carly Fleischmann", "role": "Autrice, animatrice",
+    "naissance": 1995, "deces": null, "francophone": false, "domaine": "litterature",
+    "maladies": [{"maladie": "autisme", "statut": "declaree"}],
+    "resume": "Non verbale, elle communique par écrit et anime une émission d'entretiens.",
+    "parcours": [], "citation": null, "sources": []
+  },
+
+  {
+    "slug": "stephen-fry", "nom": "Stephen Fry", "role": "Écrivain, acteur",
+    "naissance": 1957, "deces": null, "francophone": false, "domaine": "litterature",
+    "maladies": [{"maladie": "trouble-bipolaire", "statut": "declaree", "annonce": 2006}],
+    "resume": "Il a consacré un documentaire à son trouble bipolaire en 2006.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "selena-gomez", "nom": "Selena Gomez", "role": "Chanteuse, actrice",
+    "naissance": 1992, "deces": null, "francophone": false, "domaine": "musique",
+    "maladies": [{"maladie": "trouble-bipolaire", "statut": "declaree", "annonce": 2020}],
+    "resume": "Elle a annoncé son diagnostic en 2020.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "carrie-fisher", "nom": "Carrie Fisher", "role": "Actrice, écrivaine",
+    "naissance": 1956, "deces": 2016, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "trouble-bipolaire", "statut": "declaree"}],
+    "resume": "Elle a parlé ouvertement de son trouble bipolaire dans ses livres et ses interviews.",
+    "parcours": [], "citation": null, "sources": []
+  },
+
+  {
+    "slug": "selma-blair", "nom": "Selma Blair", "role": "Actrice",
+    "naissance": 1972, "deces": null, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "sclerose-en-plaques", "statut": "declaree", "annonce": 2018}],
+    "resume": "Elle a annoncé son diagnostic en 2018.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "christina-applegate", "nom": "Christina Applegate", "role": "Actrice",
+    "naissance": 1971, "deces": null, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "sclerose-en-plaques", "statut": "declaree", "annonce": 2021}],
+    "resume": "Elle a annoncé son diagnostic en 2021.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "alberto-santos-dumont", "nom": "Alberto Santos-Dumont", "role": "Pionnier de l'aviation",
+    "naissance": 1873, "deces": 1932, "francophone": false, "domaine": "sciences",
+    "maladies": [{"maladie": "sclerose-en-plaques", "statut": "biographie"}],
+    "resume": "Atteint de sclérose en plaques à la fin de sa vie.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "iouri-tynianov", "nom": "Iouri Tynianov", "role": "Écrivain et critique",
+    "naissance": 1894, "deces": 1943, "francophone": false, "domaine": "litterature",
+    "maladies": [{"maladie": "sclerose-en-plaques", "statut": "biographie"}],
+    "resume": "Il a continué à écrire pendant sa maladie.",
+    "parcours": [], "citation": null, "sources": []
+  },
+
+  {
+    "slug": "lewis-hamilton", "nom": "Lewis Hamilton", "role": "Pilote de Formule 1",
+    "naissance": 1985, "deces": null, "francophone": false, "domaine": "sport",
+    "maladies": [{"maladie": "depression", "statut": "declaree"}],
+    "resume": "Il a parlé de ses périodes de dépression dans plusieurs interviews.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "stromae", "nom": "Stromae", "role": "Auteur-compositeur",
+    "naissance": 1985, "deces": null, "francophone": true, "domaine": "musique",
+    "maladies": [{"maladie": "depression", "statut": "declaree"}],
+    "resume": "Il a évoqué sa dépression en interview et dans ses chansons.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "georg-cantor", "nom": "Georg Cantor", "role": "Mathématicien",
+    "naissance": 1845, "deces": 1918, "francophone": false, "domaine": "sciences",
+    "maladies": [{"maladie": "depression", "statut": "biographie"}],
+    "resume": "Le fondateur de la théorie des ensembles a connu des épisodes dépressifs répétés.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "conrad-ferdinand-meyer", "nom": "Conrad Ferdinand Meyer", "role": "Poète et romancier",
+    "naissance": 1825, "deces": 1898, "francophone": false, "domaine": "litterature",
+    "maladies": [{"maladie": "depression", "statut": "biographie"}],
+    "resume": "Ses biographes décrivent de longues périodes de dépression.",
+    "parcours": [], "citation": null, "sources": []
+  },
+
+  {
+    "slug": "anastacia", "nom": "Anastacia", "role": "Chanteuse",
+    "naissance": 1968, "deces": null, "francophone": false, "domaine": "musique",
+    "maladies": [{"maladie": "crohn", "statut": "declaree"}],
+    "resume": "Diagnostiquée adolescente, elle en parle régulièrement en interview.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "pete-davidson", "nom": "Pete Davidson", "role": "Humoriste, acteur",
+    "naissance": 1993, "deces": null, "francophone": false, "domaine": "cinema",
+    "maladies": [{"maladie": "crohn", "statut": "declaree"}],
+    "resume": "[Texte de la fiche à rédiger]",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "dwight-eisenhower", "nom": "Dwight D. Eisenhower", "role": "Président des États-Unis",
+    "naissance": 1890, "deces": 1969, "francophone": false, "domaine": "politique",
+    "maladies": [{"maladie": "crohn", "statut": "biographie"}],
+    "resume": "Opéré de l'intestin en 1956, pendant son mandat.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "ludwig-van-beethoven", "nom": "Ludwig van Beethoven", "role": "Compositeur",
+    "naissance": 1770, "deces": 1827, "francophone": false, "domaine": "musique",
+    "maladies": [{"maladie": "crohn", "statut": "hypothese"}],
+    "resume": "Ses troubles digestifs, décrits dans sa correspondance, ont fait évoquer une maladie inflammatoire de l'intestin.",
+    "parcours": [], "citation": null, "sources": []
+  },
+  {
+    "slug": "alfred-le-grand", "nom": "Alfred le Grand", "role": "Roi des Anglo-Saxons",
+    "naissance": 849, "deces": 899, "francophone": false, "domaine": "politique",
+    "maladies": [{"maladie": "crohn", "statut": "hypothese"}],
+    "resume": "Des historiens ont rapproché ses crises de douleurs abdominales de la maladie de Crohn.",
+    "parcours": [], "citation": null, "sources": []
+  }
+]

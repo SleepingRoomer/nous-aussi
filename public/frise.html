@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frise historique — Nous aussi</title>
+<meta name="description" content="Des personnalités qui ont parlé publiquement de leur maladie : parcours, sources et contacts utiles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&amp;family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=Alegreya+Sans+SC:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/maladies.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap site-nav">
+    <a class="logo" href="index.html">
+  <span class="logo-mark" aria-hidden="true"><span class="m-parkinson"></span><span class="m-sclerose-en-plaques"></span><span class="m-crohn"></span><span class="m-depression"></span><span class="m-autisme"></span><span class="m-trouble-bipolaire"></span></span>
+  Nous aussi
+</a>
+    <nav class="navlinks" aria-label="Navigation principale">
+      <a href="index.html#maladies">Maladies</a>
+      <a href="frise.html" aria-current="page">Frise historique</a>
+      <a href="index.html#patients">Pour les patients</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Navigation mobile">
+        <a href="index.html#maladies">Maladies</a>
+        <a href="frise.html">Frise historique</a>
+        <a href="index.html#patients">Pour les patients</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+<section class="fhero">
+  <div class="wrap">
+    <div class="eyebrow">frise historique</div>
+    <h1>Histoire des maladies et des personnes qui les ont vécues</h1>
+    <p class="lede">À gauche, l'année où chaque maladie a été décrite par la médecine. À droite, des personnalités qui en ont été atteintes.</p>
+    <div class="chips" role="group" aria-label="Filtrer par maladie">
+      <button class="chip all" type="button" data-maladie="all" aria-pressed="true"><i aria-hidden="true"></i>Toutes</button>
+      <button class="chip m-parkinson" type="button" data-maladie="parkinson" aria-pressed="false"><i aria-hidden="true"></i>Parkinson</button>
+      <button class="chip m-autisme" type="button" data-maladie="autisme" aria-pressed="false"><i aria-hidden="true"></i>Autisme</button>
+      <button class="chip m-trouble-bipolaire" type="button" data-maladie="trouble-bipolaire" aria-pressed="false"><i aria-hidden="true"></i>Bipolarité</button>
+      <button class="chip m-sclerose-en-plaques" type="button" data-maladie="sclerose-en-plaques" aria-pressed="false"><i aria-hidden="true"></i>SEP</button>
+      <button class="chip m-depression" type="button" data-maladie="depression" aria-pressed="false"><i aria-hidden="true"></i>Dépression</button>
+      <button class="chip m-crohn" type="button" data-maladie="crohn" aria-pressed="false"><i aria-hidden="true"></i>Crohn</button>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-block:40px 72px">
+  <div class="cols" aria-hidden="true"><span>La médecine</span><span></span><span>Les personnes</span></div>
+  <ol class="timeline" id="frise">
+    <li class="trow century" data-century><span class="ty"><span>IXe siècle</span></span></li>
+    <li class="trow m-crohn" data-maladie="crohn">
+      <span class="ty"><b>899</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/alfred-le-grand.html">
+          <span class="mono" aria-hidden="true">AG</span>
+          <div>
+            <b>Alfred le Grand</b>
+            <span class="who">Roi des Anglo-Saxons · 849 – 899</span>
+            <span class="row"><span class="tag">Crohn</span><span class="badge b-hypothese">hypothèse</span></span>
+            <span class="txt">Des historiens ont rapproché ses crises de douleurs abdominales de la maladie de Crohn.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow century" data-century><span class="ty"><span>XIXe siècle</span></span></li>
+    <li class="trow m-parkinson" data-maladie="parkinson">
+      <div class="tl"><span class="tag">Parkinson</span><b>James Parkinson décrit la « paralysie agitante »</b><span class="txt">Ce médecin londonien publie l&#39;observation de six patients. La maladie portera son nom.</span></div>
+      <span class="ty"><b>1817</b></span>
+    </li>
+    <li class="trow m-crohn" data-maladie="crohn">
+      <span class="ty"><b>1827</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/ludwig-van-beethoven.html">
+          <span class="mono" aria-hidden="true">LB</span>
+          <div>
+            <b>Ludwig van Beethoven</b>
+            <span class="who">Compositeur · 1770 – 1827</span>
+            <span class="row"><span class="tag">Crohn</span><span class="badge b-hypothese">hypothèse</span></span>
+            <span class="txt">Ses troubles digestifs, décrits dans sa correspondance, ont fait évoquer une maladie inflammatoire de l&#39;intestin.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-trouble-bipolaire" data-maladie="trouble-bipolaire">
+      <div class="tl"><span class="tag">Bipolarité</span><b>Jean-Pierre Falret décrit la « folie circulaire »</b><span class="txt">Il décrit l&#39;alternance de phases d&#39;excitation et de mélancolie. Jules Baillarger publie la même année une description proche.</span></div>
+      <span class="ty"><b>1854</b></span>
+    </li>
+    <li class="trow m-sclerose-en-plaques" data-maladie="sclerose-en-plaques">
+      <div class="tl"><span class="tag">SEP</span><b>Jean-Martin Charcot décrit la sclérose en plaques</b><span class="txt">À la Salpêtrière, il relie les symptômes aux lésions qu&#39;il observe dans le système nerveux.</span></div>
+      <span class="ty"><b>1868</b></span>
+    </li>
+    <li class="trow m-depression" data-maladie="depression">
+      <span class="ty"><b>1898</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/conrad-ferdinand-meyer.html">
+          <span class="mono" aria-hidden="true">CM</span>
+          <div>
+            <b>Conrad Ferdinand Meyer</b>
+            <span class="who">Poète et romancier · 1825 – 1898</span>
+            <span class="row"><span class="tag">Dépression</span></span>
+            <span class="txt">Ses biographes décrivent de longues périodes de dépression.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow century" data-century><span class="ty"><span>XXe siècle</span></span></li>
+    <li class="trow m-depression" data-maladie="depression">
+      <span class="ty"><b>1918</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/georg-cantor.html">
+          <span class="mono" aria-hidden="true">GC</span>
+          <div>
+            <b>Georg Cantor</b>
+            <span class="who">Mathématicien · 1845 – 1918</span>
+            <span class="row"><span class="tag">Dépression</span></span>
+            <span class="txt">Le fondateur de la théorie des ensembles a connu des épisodes dépressifs répétés.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-crohn" data-maladie="crohn">
+      <div class="tl"><span class="tag">Crohn</span><b>Burrill Crohn et ses collègues décrivent l&#39;iléite régionale</b><span class="txt">L&#39;article publié à New York donne son nom à la maladie de Crohn.</span></div>
+      <span class="ty"><b>1932</b></span>
+    </li>
+    <li class="trow m-sclerose-en-plaques" data-maladie="sclerose-en-plaques">
+      <span class="ty"><b>1932</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/alberto-santos-dumont.html">
+          <span class="mono" aria-hidden="true">AS</span>
+          <div>
+            <b>Alberto Santos-Dumont</b>
+            <span class="who">Pionnier de l&#39;aviation · 1873 – 1932</span>
+            <span class="row"><span class="tag">SEP</span></span>
+            <span class="txt">Atteint de sclérose en plaques à la fin de sa vie.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-autisme" data-maladie="autisme">
+      <div class="tl"><span class="tag">Autisme</span><b>Leo Kanner décrit l&#39;autisme</b><span class="txt">Ce psychiatre américain publie l&#39;observation de onze enfants. Hans Asperger publie à Vienne l&#39;année suivante.</span></div>
+      <span class="ty"><b>1943</b></span>
+    </li>
+    <li class="trow m-sclerose-en-plaques" data-maladie="sclerose-en-plaques">
+      <span class="ty"><b>1943</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/iouri-tynianov.html">
+          <span class="mono" aria-hidden="true">IT</span>
+          <div>
+            <b>Iouri Tynianov</b>
+            <span class="who">Écrivain et critique · 1894 – 1943</span>
+            <span class="row"><span class="tag">SEP</span></span>
+            <span class="txt">Il a continué à écrire pendant sa maladie.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-crohn" data-maladie="crohn">
+      <span class="ty"><b>1969</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/dwight-eisenhower.html">
+          <span class="mono" aria-hidden="true">DE</span>
+          <div>
+            <b>Dwight D. Eisenhower</b>
+            <span class="who">Président des États-Unis · 1890 – 1969</span>
+            <span class="row"><span class="tag">Crohn</span></span>
+            <span class="txt">Opéré de l&#39;intestin en 1956, pendant son mandat.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-parkinson" data-maladie="parkinson">
+      <span class="ty"><b>1986</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/anna-neagle.html">
+          <span class="mono" aria-hidden="true">AN</span>
+          <div>
+            <b>Anna Neagle</b>
+            <span class="who">Actrice · 1904 – 1986</span>
+            <span class="row"><span class="tag">Parkinson</span></span>
+            <span class="txt">[Texte de la fiche à rédiger]</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-parkinson" data-maladie="parkinson">
+      <span class="ty"><b>1988</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/adelaide-hautval.html">
+          <span class="mono" aria-hidden="true">AH</span>
+          <div>
+            <b>Adélaïde Hautval</b>
+            <span class="who">Psychiatre · 1906 – 1988</span>
+            <span class="row"><span class="tag">Parkinson</span></span>
+            <span class="txt">[Texte de la fiche à rédiger]</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-parkinson" data-maladie="parkinson">
+      <span class="ty"><b>1988</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/alec-issigonis.html">
+          <span class="mono" aria-hidden="true">AI</span>
+          <div>
+            <b>Alec Issigonis</b>
+            <span class="who">Ingénieur, créateur de la Mini · 1906 – 1988</span>
+            <span class="row"><span class="tag">Parkinson</span></span>
+            <span class="txt">[Texte de la fiche à rédiger]</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow century" data-century><span class="ty"><span>XXIe siècle</span></span></li>
+    <li class="trow m-parkinson" data-maladie="parkinson">
+      <span class="ty"><b>2016</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/andrew-grove.html">
+          <span class="mono" aria-hidden="true">AG</span>
+          <div>
+            <b>Andrew Grove</b>
+            <span class="who">Cofondateur d&#39;Intel · 1936 – 2016</span>
+            <span class="row"><span class="tag">Parkinson</span><span class="badge b-declaree">déclarée</span></span>
+            <span class="txt">Il a financé la recherche sur la maladie après son diagnostic.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-trouble-bipolaire" data-maladie="trouble-bipolaire">
+      <span class="ty"><b>2016</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/carrie-fisher.html">
+          <span class="mono" aria-hidden="true">CF</span>
+          <div>
+            <b>Carrie Fisher</b>
+            <span class="who">Actrice, écrivaine · 1956 – 2016</span>
+            <span class="row"><span class="tag">Bipolarité</span><span class="badge b-declaree">déclarée</span></span>
+            <span class="txt">Elle a parlé ouvertement de son trouble bipolaire dans ses livres et ses interviews.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="trow m-parkinson" data-maladie="parkinson">
+      <span class="ty"><b>2025</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/ozzy-osbourne.html">
+          <span class="mono" aria-hidden="true">OO</span>
+          <div>
+            <b>Ozzy Osbourne</b>
+            <span class="who">Chanteur · 1948 – 2025</span>
+            <span class="row"><span class="tag">Parkinson</span><span class="badge b-declaree">déclarée</span></span>
+            <span class="txt">Il a annoncé sa maladie en 2020.</span>
+          </div>
+        </a>
+      </div>
+    </li>
+  </ol>
+  <p class="note" id="frise-vide" hidden style="text-align:center;margin-top:24px">Aucune entrée pour cette maladie pour l'instant.</p>
+  <p class="note" style="margin-top:32px">Les diagnostics de personnages historiques sont souvent des hypothèses posées après coup. Ils sont signalés comme tels.</p>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Nous aussi ne donne aucun avis médical. Les fiches s'appuient sur des déclarations publiques et des sources biographiques, citées sur chaque page.</p>
+    <nav aria-label="Liens de bas de page">
+      <a href="a-propos.html#signaler">Signaler une erreur</a>
+      <a href="a-propos.html#retrait">Demander un retrait</a>
+      <a href="a-propos.html#methode">Méthode</a>
+    </nav>
+  </div>
+</footer>
+<script src="static/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "parkinson",
+    "nom": "Maladie de Parkinson",
+    "court": "Parkinson",
+    "categorie": "maladie neurodégénérative",
+    "couleur": "#C8202F",
+    "encre": "#A3192A",
+    "teinte": "#FBE9EA",
+    "symbole": "La tulipe rouge",
+    "description": "Elle touche les neurones qui produisent la dopamine. Elle se manifeste notamment par un tremblement au repos, une raideur des muscles et une lenteur des mouvements. Elle évolue lentement, et des traitements permettent d'en atténuer les symptômes.",
+    "premiere_description": "1817, James Parkinson",
+    "journee": "11 avril",
+    "en_france": "[CHIFFRE] personnes",
+    "ressources": [
+      {"nom": "France Parkinson", "detail": "Association de patients, écoute et comités locaux", "url": ""},
+      {"nom": "Centres experts Parkinson", "detail": "Consultations spécialisées dans les CHU", "url": ""}
+    ]
+  },
+  {
+    "slug": "autisme",
+    "nom": "Autisme",
+    "court": "Autisme",
+    "categorie": "trouble du neurodéveloppement",
+    "couleur": "#B8860B",
+    "encre": "#8A6400",
+    "teinte": "#FBF2D9",
+    "symbole": "Le signe infini",
+    "description": "L'autisme touche la communication, les interactions sociales et la façon de percevoir son environnement. Il se manifeste de manière très différente d'une personne à l'autre.",
+    "premiere_description": "1943, Leo Kanner",
+    "journee": "2 avril",
+    "en_france": "[CHIFFRE] personnes",
+    "ressources": [
+      {"nom": "Autisme France", "detail": "Association de familles et de personnes autistes", "url": ""},
+      {"nom": "Centres ressources autisme (CRA)", "detail": "Un centre par région, pour l'information et le diagnostic", "url": ""}
+    ]
+  },
+  {
+    "slug": "trouble-bipolaire",
+    "nom": "Trouble bipolaire",
+    "court": "Bipolarité",
+    "categorie": "trouble de l'humeur",
+    "couleur": "#2B2F36",
+    "encre": "#2B2F36",
+    "teinte": "#E9EBEF",
+    "rayures": true,
+    "symbole": "Le ruban rayé noir et blanc",
+    "description": "Le trouble bipolaire fait alterner des phases d'excitation, appelées manie ou hypomanie, et des phases de dépression, séparées par des périodes stables. Un traitement régulier permet de limiter les rechutes.",
+    "premiere_description": "1854, Jean-Pierre Falret",
+    "journee": "30 mars",
+    "en_france": "[CHIFFRE] personnes",
+    "ressources": [
+      {"nom": "Argos 2001", "detail": "Association de personnes bipolaires et de leurs proches", "url": ""},
+      {"nom": "3114", "detail": "Numéro national de prévention du suicide, gratuit, 24 h/24", "url": ""}
+    ]
+  },
+  {
+    "slug": "sclerose-en-plaques",
+    "nom": "Sclérose en plaques",
+    "court": "SEP",
+    "categorie": "maladie auto-immune",
+    "couleur": "#D9600B",
+    "encre": "#B04D06",
+    "teinte": "#FDEEDF",
+    "symbole": "Le ruban orange",
+    "description": "Le système immunitaire s'attaque à la gaine qui protège les nerfs du cerveau et de la moelle épinière. La maladie évolue souvent par poussées, avec des troubles de la vision, de la marche ou de la sensibilité.",
+    "premiere_description": "1868, Jean-Martin Charcot",
+    "journee": "30 mai",
+    "en_france": "[CHIFFRE] personnes",
+    "ressources": [
+      {"nom": "Fondation ARSEP", "detail": "Recherche et information sur la sclérose en plaques", "url": ""},
+      {"nom": "Ligue française contre la sclérose en plaques", "detail": "Accompagnement des patients et des proches", "url": ""}
+    ]
+  },
+  {
+    "slug": "depression",
+    "nom": "Dépression",
+    "court": "Dépression",
+    "categorie": "trouble de l'humeur",
+    "couleur": "#3D8B2F",
+    "encre": "#2F6E24",
+    "teinte": "#E8F3E4",
+    "symbole": "Le ruban vert",
+    "description": "La dépression associe une tristesse qui dure, une perte d'intérêt et de plaisir, et souvent des troubles du sommeil, de l'appétit et de la concentration. Elle se soigne.",
+    "premiere_description": "Antiquité, la « mélancolie » d'Hippocrate",
+    "journee": "10 octobre (santé mentale)",
+    "en_france": "[CHIFFRE] personnes",
+    "ressources": [
+      {"nom": "3114", "detail": "Numéro national de prévention du suicide, gratuit, 24 h/24", "url": ""},
+      {"nom": "France Dépression", "detail": "Association de patients et de proches", "url": ""}
+    ]
+  },
+  {
+    "slug": "crohn",
+    "nom": "Maladie de Crohn",
+    "court": "Crohn",
+    "categorie": "maladie inflammatoire de l'intestin",
+    "couleur": "#6B3FA0",
+    "encre": "#5A3388",
+    "teinte": "#EFE8F7",
+    "symbole": "Le ruban violet",
+    "description": "Maladie inflammatoire chronique de l'intestin. Elle évolue par poussées, avec des douleurs abdominales, de la diarrhée et une grande fatigue.",
+    "premiere_description": "1932, Burrill Crohn",
+    "journee": "19 mai",
+    "en_france": "[CHIFFRE] personnes",
+    "ressources": [
+      {"nom": "afa Crohn RCH France", "detail": "Association des malades de MICI", "url": ""}
+    ]
+  }
+]

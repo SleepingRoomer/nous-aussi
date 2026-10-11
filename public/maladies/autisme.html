@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Autisme — Nous aussi</title>
+<meta name="description" content="4 personnalités qui vivent ou ont vécu avec la autisme.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&amp;family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=Alegreya+Sans+SC:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="../static/style.css">
+<link rel="stylesheet" href="../static/maladies.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap site-nav">
+    <a class="logo" href="../index.html">
+  <span class="logo-mark" aria-hidden="true"><span class="m-parkinson"></span><span class="m-sclerose-en-plaques"></span><span class="m-crohn"></span><span class="m-depression"></span><span class="m-autisme"></span><span class="m-trouble-bipolaire"></span></span>
+  Nous aussi
+</a>
+    <nav class="navlinks" aria-label="Navigation principale">
+      <a href="../index.html#maladies" aria-current="page">Maladies</a>
+      <a href="../frise.html">Frise historique</a>
+      <a href="../index.html#patients">Pour les patients</a>
+      <a href="../a-propos.html">À propos</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Navigation mobile">
+        <a href="../index.html#maladies">Maladies</a>
+        <a href="../frise.html">Frise historique</a>
+        <a href="../index.html#patients">Pour les patients</a>
+        <a href="../a-propos.html">À propos</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+<section class="mhero m-autisme">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../index.html#maladies">Maladies</a><span aria-hidden="true">/</span><span>Autisme</span></nav>
+    <div class="mhero-grid">
+      <div>
+        <div class="eyebrow">trouble du neurodéveloppement</div>
+        <h1>Autisme</h1>
+        <p class="lede">L&#39;autisme touche la communication, les interactions sociales et la façon de percevoir son environnement. Il se manifeste de manière très différente d&#39;une personne à l&#39;autre.</p>
+      </div>
+      <div class="emblem" aria-hidden="true"><span class="big-dot"></span></div>
+    </div>
+    <dl class="facts">
+      <div><dt>première description</dt><dd>1943, Leo Kanner</dd></div>
+      <div><dt>journée mondiale</dt><dd>2 avril</dd></div>
+      <div><dt>symbole</dt><dd>Le signe infini</dd></div>
+      <div><dt>en France</dt><dd>[CHIFFRE] personnes</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="wrap section m-autisme" id="personnalites" style="padding-block:56px 64px;gap:28px">
+  <div class="list-head">
+    <h2>Personnalités</h2>
+    <span id="compte" aria-live="polite">4 personnalités</span>
+  </div>
+  <div class="browse" data-total="4">
+    <aside class="side" aria-label="Filtres">
+      <div class="toggle">
+        <label for="fr"><b>Francophones</b><span>Personnalités de langue française</span></label>
+        <span class="sw"><input id="fr" type="checkbox"><span class="track"></span><span class="knob"></span></span>
+      </div>
+      <fieldset class="facet" data-facet="vie">
+        <legend>période</legend>
+        <button class="opt" type="button" data-value="all" aria-pressed="true"><span>Toutes les époques</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="alive" aria-pressed="false"><span>En vie</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="dead" aria-pressed="false"><span>Disparues</span><span class="n"></span></button>
+      </fieldset>
+      <fieldset class="facet" data-facet="dom">
+        <legend>domaine</legend>
+        <button class="opt" type="button" data-value="all" aria-pressed="true"><span>Tous les domaines</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="cinema" aria-pressed="false"><span>Cinéma et scène</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="musique" aria-pressed="false"><span>Musique</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="sport" aria-pressed="false"><span>Sport</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="sciences" aria-pressed="false"><span>Sciences et techniques</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="litterature" aria-pressed="false"><span>Lettres et idées</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="politique" aria-pressed="false"><span>Politique</span><span class="n"></span></button>
+      </fieldset>
+      <fieldset class="facet" data-facet="src">
+        <legend>d'où vient l'information</legend>
+        <button class="opt" type="button" data-value="all" aria-pressed="true"><span>Toutes les sources</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="declaree" aria-pressed="false"><span>Déclarée par la personne</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="biographie" aria-pressed="false"><span>Biographie</span><span class="n"></span></button>
+        <button class="opt" type="button" data-value="hypothese" aria-pressed="false"><span>Hypothèse historique</span><span class="n"></span></button>
+      </fieldset>
+      <button class="linkish" type="button" id="reset" hidden>Effacer les filtres</button>
+    </aside>
+    <div class="results">
+      <div class="empty" id="vide" hidden><b>Aucune personnalité ne correspond.</b><button class="linkish" type="button" data-reset>Effacer les filtres</button></div>
+      <div class="grid3" id="cartes">
+<a class="pcard m-autisme" href="../personnes/bella-ramsey.html"
+   data-vie="alive" data-fr="0"
+   data-dom="cinema" data-src="declaree">
+  <span class="mono" aria-hidden="true">BR</span>
+  <span class="pcard-id"><b>Bella Ramsey</b><span>Actrice · 2003 –</span></span>
+  <span class="pcard-foot"><span class="badge b-declaree">déclarée</span></span>
+</a>
+<a class="pcard m-autisme" href="../personnes/carly-fleischmann.html"
+   data-vie="alive" data-fr="0"
+   data-dom="litterature" data-src="declaree">
+  <span class="mono" aria-hidden="true">CF</span>
+  <span class="pcard-id"><b>Carly Fleischmann</b><span>Autrice, animatrice · 1995 –</span></span>
+  <span class="pcard-foot"><span class="badge b-declaree">déclarée</span></span>
+</a>
+<a class="pcard m-autisme" href="../personnes/chloe-hayden.html"
+   data-vie="alive" data-fr="0"
+   data-dom="cinema" data-src="declaree">
+  <span class="mono" aria-hidden="true">CH</span>
+  <span class="pcard-id"><b>Chloé Hayden</b><span>Actrice · 1997 –</span></span>
+  <span class="pcard-foot"><span class="badge b-declaree">déclarée</span></span>
+</a>
+<a class="pcard m-autisme" href="../personnes/josef-schovanec.html"
+   data-vie="alive" data-fr="1"
+   data-dom="litterature" data-src="declaree">
+  <span class="mono" aria-hidden="true">JS<span class="fr-tag">fr</span></span>
+  <span class="pcard-id"><b>Josef Schovanec</b><span>Philosophe, écrivain · 1981 –</span></span>
+  <span class="pcard-foot"><span class="badge b-declaree">déclarée</span></span>
+</a>
+      </div>
+      <div class="src-legend">
+        <span><b>Déclarée</b> : la personne l'a dit elle-même.</span>
+        <span><b>Biographie</b> : établi par des biographes.</span>
+        <span><b>Hypothèse</b> : diagnostic posé après coup.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap help">
+    <div>
+      <h2>Vous êtes concerné ?</h2>
+      <p style="color:var(--ink-2)">Votre médecin traitant reste votre premier interlocuteur. Les associations accompagnent les patients et leurs proches au quotidien.</p>
+    </div>
+    <ul>
+      <li><div><span><b>Autisme France</b><span>Association de familles et de personnes autistes</span></span></div></li>
+      <li><div><span><b>Centres ressources autisme (CRA)</b><span>Un centre par région, pour l&#39;information et le diagnostic</span></span></div></li>
+      <li><a href="../frise.html#autisme"><span><b>Autisme dans l'histoire</b><span>Sur la frise historique</span></span><span aria-hidden="true">→</span></a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Nous aussi ne donne aucun avis médical. Les fiches s'appuient sur des déclarations publiques et des sources biographiques, citées sur chaque page.</p>
+    <nav aria-label="Liens de bas de page">
+      <a href="../a-propos.html#signaler">Signaler une erreur</a>
+      <a href="../a-propos.html#retrait">Demander un retrait</a>
+      <a href="../a-propos.html#methode">Méthode</a>
+    </nav>
+  </div>
+</footer>
+<script src="../static/app.js" defer></script>
+</body>
+</html>

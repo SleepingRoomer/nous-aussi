@@ -1,0 +1,9 @@
+/* Généré par build.py à partir de data/maladies.json — ne pas modifier à la main */
+.m-parkinson{--c:#C8202F;--ink-c:#A3192A;--t:#FBE9EA;--glow:#E1848D}
+.m-autisme{--c:#B8860B;--ink-c:#8A6400;--t:#FBF2D9;--glow:#D8BC79}
+.m-trouble-bipolaire{--c:#2B2F36;--ink-c:#2B2F36;--t:#E9EBEF;--glow:#8A8D90}
+.m-trouble-bipolaire .mono,.mono.m-trouble-bipolaire,.mhero.m-trouble-bipolaire{background-image:repeating-linear-gradient(135deg,#E6E8EC 0 10px,#F4F5F7 10px 20px)}
+.m-trouble-bipolaire .mono,.mono.m-trouble-bipolaire{color:#2B2F36}
+.m-sclerose-en-plaques{--c:#D9600B;--ink-c:#B04D06;--t:#FDEEDF;--glow:#EAA879}
+.m-depression{--c:#3D8B2F;--ink-c:#2F6E24;--t:#E8F3E4;--glow:#94BF8D}
+.m-crohn{--c:#6B3FA0;--ink-c:#5A3388;--t:#EFE8F7;--glow:#AE95CB}

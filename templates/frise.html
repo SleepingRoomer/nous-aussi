@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge %}
+{% block title %}Frise historique — Nous aussi{% endblock %}
+{% block main %}
+<section class="fhero">
+  <div class="wrap">
+    <div class="eyebrow">frise historique</div>
+    <h1>Histoire des maladies et des personnes qui les ont vécues</h1>
+    <p class="lede">À gauche, l'année où chaque maladie a été décrite par la médecine. À droite, des personnalités qui en ont été atteintes.</p>
+    <div class="chips" role="group" aria-label="Filtrer par maladie">
+      <button class="chip all" type="button" data-maladie="all" aria-pressed="true"><i aria-hidden="true"></i>Toutes</button>
+      {% for m in maladies %}
+      <button class="chip m-{{ m.slug }}" type="button" data-maladie="{{ m.slug }}" aria-pressed="false"><i aria-hidden="true"></i>{{ m.court }}</button>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-block:40px 72px">
+  <div class="cols" aria-hidden="true"><span>La médecine</span><span></span><span>Les personnes</span></div>
+  <ol class="timeline" id="frise">
+    {% for r in lignes %}
+    {% if r.siecle is defined %}
+    <li class="trow century" data-century><span class="ty"><span>{{ r.siecle }}</span></span></li>
+    {% elif r.type == 'medecine' %}
+    <li class="trow m-{{ r.maladie }}" data-maladie="{{ r.maladie }}">
+      <div class="tl"><span class="tag">{{ r.nom_maladie }}</span><b>{{ r.titre }}</b><span class="txt">{{ r.texte }}</span></div>
+      <span class="ty"><b>{{ r.annee }}</b></span>
+    </li>
+    {% else %}
+    <li class="trow m-{{ r.maladie }}" data-maladie="{{ r.maladie }}">
+      <span class="ty"><b>{{ r.annee }}</b></span>
+      <div class="tr">
+        <a class="tperson" href="personnes/{{ r.p.slug }}.html">
+          <span class="mono" aria-hidden="true">{{ r.p.initiales }}</span>
+          <div>
+            <b>{{ r.p.nom }}</b>
+            <span class="who">{{ r.p.role }} · {{ r.p.annees }}</span>
+            <span class="row"><span class="tag">{{ r.nom_maladie }}</span>{% if r.statut != 'biographie' %}{{ badge(r.statut) }}{% endif %}</span>
+            <span class="txt">{{ r.p.resume }}</span>
+          </div>
+        </a>
+      </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+  <p class="note" id="frise-vide" hidden style="text-align:center;margin-top:24px">Aucune entrée pour cette maladie pour l'instant.</p>
+  <p class="note" style="margin-top:32px">Les diagnostics de personnages historiques sont souvent des hypothèses posées après coup. Ils sont signalés comme tels.</p>
+</section>
+{% endblock %}
