@@ -1,4 +1,4 @@
-/* Nous aussi — comportements des pages (recherche, filtres, frise). Aucune dépendance. */
+/* Malades — comportements des pages (recherche, filtres, frise). Aucune dépendance. */
 (function () {
   "use strict";
   var $ = function (s, el) { return (el || document).querySelector(s); };

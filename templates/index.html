@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block title %}Nous aussi{% endblock %}
+{% block title %}Malades{% endblock %}
 {% block main %}
 <section class="wrap hero">
   <div class="hero-text">
-    <div class="eyebrow">personnalités · maladies · témoignages</div>
-    <h1>Des personnalités qui ont parlé publiquement de leur maladie</h1>
-    <p class="lede">Acteurs, sportives, écrivains ou chercheuses. Pour chacun, son parcours, ce qu'il en a dit, et des contacts utiles si vous êtes concerné.</p>
+    <div class="eyebrow">ils ont parlé de leur maladie</div>
+    <h1>Des personnalités, malades comme beaucoup d'autres</h1>
+    <p class="lede">Acteurs, sportives, écrivains ou chercheuses ont rendu publique leur maladie. Malades rassemble ce qu'ils en ont dit, explique chaque maladie et oriente vers les associations de patients.</p>
     <form class="search" role="search" id="search" autocomplete="off">
       <label class="sr-only" for="q">Chercher une personne ou une maladie</label>
       <input id="q" type="search" placeholder="Une personne, une maladie…" aria-controls="suggest" aria-autocomplete="list">
@@ -19,6 +19,29 @@
       <span class="mono m-{{ p.principale }}">{{ p.initiales }}</span>
     {% endfor %}
   </div>
+</section>
+
+<section id="principe" class="wrap section principe">
+  <div class="section-head">
+    <div>
+      <h2>Le principe</h2>
+      <p>Pourquoi ce site, ce qu'on y trouve, et comment les fiches sont choisies.</p>
+    </div>
+  </div>
+  <ol class="principe-list">
+    <li>
+      <h3>Rendre la maladie moins taboue</h3>
+      <p>La maladie touche tout le monde, y compris des personnes connues et admirées. Voir l'une d'elles en parler ouvertement aide à en parler soi-même, à se sentir moins seul et à changer le regard des autres.</p>
+    </li>
+    <li>
+      <h3>Comprendre la maladie</h3>
+      <p>Chaque maladie a sa page : ce qu'elle est, quand la médecine l'a décrite, qui l'a vécue, et les associations qui informent les patients et leurs proches.</p>
+    </li>
+    <li>
+      <h3>Ne publier que ce qui a été dit</h3>
+      <p>Pour une personne vivante, seule une maladie qu'elle a elle-même rendue publique apparaît. Chaque fiche indique l'origine de l'information et sa source : déclarée, biographie ou hypothèse.</p>
+    </li>
+  </ol>
 </section>
 
 <section id="maladies" class="soft">

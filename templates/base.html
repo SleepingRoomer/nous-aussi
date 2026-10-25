@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-{% endif %}<title>{% block title %}Nous aussi{% endblock %}</title>
+{% endif %}<title>{% block title %}Malades{% endblock %}</title>
 <meta name="description" content="{% block description %}Des personnalités qui ont parlé publiquement de leur maladie : parcours, sources et contacts utiles.{% endblock %}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
   <div class="wrap site-nav">
     {{ logo(root) }}
     <nav class="navlinks" aria-label="Navigation principale">
+      <a href="{{ root }}index.html#principe">Le principe</a>
       <a href="{{ root }}index.html#maladies"{% if section == 'maladies' %} aria-current="page"{% endif %}>Maladies</a>
       <a href="{{ root }}frise.html"{% if section == 'frise' %} aria-current="page"{% endif %}>Frise historique</a>
       <a href="{{ root }}index.html#patients">Pour les patients</a>
@@ -26,6 +27,7 @@
     <details class="menu">
       <summary>Menu</summary>
       <nav aria-label="Navigation mobile">
+        <a href="{{ root }}index.html#principe">Le principe</a>
         <a href="{{ root }}index.html#maladies">Maladies</a>
         <a href="{{ root }}frise.html">Frise historique</a>
         <a href="{{ root }}index.html#patients">Pour les patients</a>
@@ -41,7 +43,7 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <p>Nous aussi ne donne aucun avis médical. Les fiches s'appuient sur des déclarations publiques et des sources biographiques, citées sur chaque page.</p>
+    <p>Malades ne donne aucun avis médical. Les fiches s'appuient sur des déclarations publiques et des sources biographiques, citées sur chaque page.</p>
     <nav aria-label="Liens de bas de page">
       <a href="{{ root }}a-propos.html#signaler">Signaler une erreur</a>
       <a href="{{ root }}a-propos.html#retrait">Demander un retrait</a>

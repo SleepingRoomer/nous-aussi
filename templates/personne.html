@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_macros.html" import badge, mini %}
-{% block title %}{{ p.nom }} — Nous aussi{% endblock %}
+{% block title %}{{ p.nom }} — Malades{% endblock %}
 {% block description %}{{ p.nom }} et la {{ maladies_par_slug[p.principale].nom | lower_first }} : parcours et sources.{% endblock %}
 {% block main %}
 {% set mp = maladies_par_slug[p.principale] %}

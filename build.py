@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Génère le site statique « Nous aussi » dans le dossier public/.
+"""Génère le site statique « Malades » dans le dossier public/.
 
 Usage :
     python3 build.py              # génère public/

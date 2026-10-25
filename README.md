@@ -1,4 +1,4 @@
-# Nous aussi
+# Malades
 
 Site statique qui présente des personnalités ayant parlé publiquement de leur maladie, avec une page par maladie, une fiche par personne et une frise historique.
 
