@@ -2,7 +2,7 @@ name: Publier sur GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/determined-euler-4kvliq]
   workflow_dispatch:
 
 permissions:
